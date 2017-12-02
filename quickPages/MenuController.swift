@@ -2,7 +2,7 @@
 //  MenuController.swift
 //  quickPages
 //
-//  Created by Pa Poliwka on 02/12/2017.
+//  Created by Pa Bloo on 02/12/2017.
 //  Copyright © 2017 pabloo. All rights reserved.
 //
 
