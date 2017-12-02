@@ -658,12 +658,17 @@
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <menu id="cnz-sv-rwf">
                     <items>
+                        <menuItem title="Item" id="OG7-a9-Plq">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="TQJ-9d-QF5"/>
                         <menuItem title="Add" id="GwL-EM-iwg">
                             <modifierMask key="keyEquivalentModifierMask"/>
                         </menuItem>
                         <menuItem title="Remove" id="zO6-gS-sDn">
                             <modifierMask key="keyEquivalentModifierMask"/>
                         </menuItem>
+                        <menuItem isSeparatorItem="YES" id="qHn-RG-R8l"/>
                         <menuItem title="Quit" id="vqx-hs-fvY">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>

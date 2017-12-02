@@ -2,7 +2,7 @@
 //  MenuController.swift
 //  quickPages
 //
-//  Created by Pawel Poliwka on 02/12/2017.
+//  Created by Pa Poliwka on 02/12/2017.
 //  Copyright © 2017 pabloo. All rights reserved.
 //
 
@@ -22,6 +22,8 @@ class MenuController: NSObject {
     
     
     @IBAction func quitClicked(_ sender: NSMenuItem) {
+        
+        NSApplication.shared().terminate(self)
         
     }
 
