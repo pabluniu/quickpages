@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -680,8 +681,27 @@
                 <customObject id="Og8-RU-yDw" customClass="MenuController" customModule="quickPages" customModuleProvider="target">
                     <connections>
                         <outlet property="barMenu" destination="cnz-sv-rwf" id="lUQ-aL-Tdt"/>
+                        <outlet property="pageItem" destination="5od-Mx-MlA" id="EkH-ZJ-AI1"/>
                     </connections>
                 </customObject>
+                <customView id="5od-Mx-MlA" customClass="pageView" customModule="quickPages" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCc-xI-EpB">
+                            <rect key="frame" x="18" y="11" width="114" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="GitHub" id="qiB-Pz-6Dl">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <connections>
+                        <outlet property="pageName" destination="sCc-xI-EpB" id="gOo-HU-q5Z"/>
+                    </connections>
+                </customView>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
