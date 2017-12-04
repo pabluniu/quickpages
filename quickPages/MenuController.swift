@@ -13,36 +13,37 @@ class MenuController: NSObject {
     @IBOutlet weak var barMenu: NSMenu!
     @IBOutlet weak var pageItem: pageView!
     
-    var menuPageItem: NSMenuItem!
-    
-    var menu2: NSMenuItem = NSMenuItem()
+    //var menuPageItem: NSMenuItem!
     
     let barItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
+    
+    let page1 = FavPage.init(pAlias: "GitHub", pAddress: "http://github.com", pIcon: nil)
+    let page2 = FavPage.init(pAlias: "Docker", pAddress: "http://docker.com", pIcon: nil)
     
     
     
     override func awakeFromNib() {
         
+        let favo = [page1, page2]
+        
         let mIcon = NSImage(named: "myIcon")
         barItem.image = mIcon
         barItem.menu = barMenu
         
-        menuPageItem = barMenu.item(withTitle: "Item")
-        pageItem.pageName.stringValue = "duperka"
-        menuPageItem.view = pageItem
-        //menuPageItem.pagenam
+       for fav in favo{
         
-        menu2.title  = "pawliczek"
-        barMenu.addItem(menu2)
-        menu2 = barMenu.addItem(withTitle: "s", action: nil, keyEquivalent: "ss")
-        //menu2 = barMenu.pos
-    
-        //menu2.
-       // barMenu.addItem(menu2)
+        var item = NSMenuItem.init()
+        //var item: NSMenuItem = NSMenuItem.init(title: (fav?.pageAllias)!, action: nil, keyEquivalent: "")
         
-      
+        pageItem.pageName.stringValue = (fav?.pageAllias)!
+        
+        item.view = pageItem
         
         
+        barMenu.insertItem(item, at: 0)
+        
+            
+        }
     }
 
     

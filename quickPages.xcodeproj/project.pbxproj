@@ -13,6 +13,7 @@
 		72A132201FD3493000F965A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A1321E1FD3493000F965A3 /* Main.storyboard */; };
 		72A132281FD3509C00F965A3 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A132271FD3509C00F965A3 /* MenuController.swift */; };
 		72B718911FD3893F00B47535 /* pageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B718901FD3893F00B47535 /* pageView.swift */; };
+		72C6DDCF1FD4576B0068A54D /* FavPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C6DDCE1FD4576B0068A54D /* FavPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		72A132211FD3493000F965A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A132271FD3509C00F965A3 /* MenuController.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = MenuController.swift; sourceTree = "<group>"; };
 		72B718901FD3893F00B47535 /* pageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pageView.swift; sourceTree = "<group>"; };
+		72C6DDCE1FD4576B0068A54D /* FavPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				72A132181FD3492F00F965A3 /* AppDelegate.swift */,
 				72A132271FD3509C00F965A3 /* MenuController.swift */,
+				72C6DDCE1FD4576B0068A54D /* FavPage.swift */,
 				72A1321A1FD3492F00F965A3 /* ViewController.swift */,
 				72A1321C1FD3493000F965A3 /* Assets.xcassets */,
 				72A1321E1FD3493000F965A3 /* Main.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				72A1321B1FD3492F00F965A3 /* ViewController.swift in Sources */,
 				72B718911FD3893F00B47535 /* pageView.swift in Sources */,
+				72C6DDCF1FD4576B0068A54D /* FavPage.swift in Sources */,
 				72A132281FD3509C00F965A3 /* MenuController.swift in Sources */,
 				72A132191FD3492F00F965A3 /* AppDelegate.swift in Sources */,
 			);

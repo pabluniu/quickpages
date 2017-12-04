@@ -663,15 +663,10 @@
                             <modifierMask key="keyEquivalentModifierMask"/>
                         </menuItem>
                         <menuItem isSeparatorItem="YES" id="TQJ-9d-QF5"/>
-                        <menuItem title="Add" id="GwL-EM-iwg">
-                            <modifierMask key="keyEquivalentModifierMask"/>
-                        </menuItem>
-                        <menuItem title="Remove" id="zO6-gS-sDn">
-                            <modifierMask key="keyEquivalentModifierMask"/>
-                        </menuItem>
+                        <menuItem title="Add" keyEquivalent="d" id="GwL-EM-iwg"/>
+                        <menuItem title="Remove" keyEquivalent="r" id="zO6-gS-sDn"/>
                         <menuItem isSeparatorItem="YES" id="qHn-RG-R8l"/>
-                        <menuItem title="Quit" id="vqx-hs-fvY">
-                            <modifierMask key="keyEquivalentModifierMask"/>
+                        <menuItem title="Quit" keyEquivalent="q" id="vqx-hs-fvY">
                             <connections>
                                 <action selector="quitClicked:" target="Og8-RU-yDw" id="4Jv-LL-b8J"/>
                             </connections>
