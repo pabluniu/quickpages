@@ -12,9 +12,14 @@ class pageView: NSView {
     
     @IBOutlet weak var pageName: NSTextField!
     
-    func update(){
+    
+/*    init(name: String) {
+        self.pageName.stringValue = name
+    }*/
+    
+    func update(name: String){
         
-        self.pageName.stringValue = "Pala"
+        self.pageName.stringValue = name
         
     }
 }

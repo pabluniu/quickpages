@@ -23,9 +23,9 @@ class FavPage{
         }
         
         //Initialization
-        pageAllias = pAlias
-        pageAddress = pAddress
-        pageIcon = pIcon
+        self.pageAllias = pAlias
+        self.pageAddress = pAddress
+        self.pageIcon = pIcon
     }
 
 

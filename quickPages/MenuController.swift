@@ -10,6 +10,10 @@ import Cocoa
 
 class MenuController: NSObject {
     
+   // UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil]
+    
+    let sstoryBoard = NSStoryboard.init(name: "Main", bundle: nil)
+    
     @IBOutlet weak var barMenu: NSMenu!
     @IBOutlet weak var pageItem: pageView!
     
@@ -18,13 +22,14 @@ class MenuController: NSObject {
     let barItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     
     let page1 = FavPage.init(pAlias: "GitHub", pAddress: "http://github.com", pIcon: nil)
+
     let page2 = FavPage.init(pAlias: "Docker", pAddress: "http://docker.com", pIcon: nil)
     
     
     
     override func awakeFromNib() {
         
-        let favo = [page1, page2]
+        let favo = ["First1", "Second1"]
         
         let mIcon = NSImage(named: "myIcon")
         barItem.image = mIcon
@@ -32,18 +37,20 @@ class MenuController: NSObject {
         
        for fav in favo{
         
-        var item = NSMenuItem.init()
-        //var item: NSMenuItem = NSMenuItem.init(title: (fav?.pageAllias)!, action: nil, keyEquivalent: "")
+        let nazwa = fav + "PP"
         
-        pageItem.pageName.stringValue = (fav?.pageAllias)!
+        barMenu.addItem(withTitle: nazwa, action: nil, keyEquivalent: "")
         
-        item.view = pageItem
+        var menuItem: NSMenuItem!
+        
+        menuItem = barMenu.item(withTitle: nazwa)
+        
+        pageItem.pageName.stringValue = fav
+        menuItem.view = pageItem
         
         
-        barMenu.insertItem(item, at: 0)
-        
-            
         }
+    
     }
 
     
