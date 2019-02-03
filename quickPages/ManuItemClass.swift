@@ -12,10 +12,6 @@ class ManuItemClass: NSView {
 
     @IBOutlet var okenko: NSView!
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        
-        
-    }
+
     
 }
