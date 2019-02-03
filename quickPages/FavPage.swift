@@ -26,6 +26,7 @@ class FavPage{
         self.pageAllias = pAlias
         self.pageAddress = pAddress
         self.pageIcon = pIcon
+        //selfrecon.
     }
 
 
